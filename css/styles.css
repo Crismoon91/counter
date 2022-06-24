@@ -1,0 +1,94 @@
+:root {
+  --fuentePrincipal: "Hind", sans-serif;
+
+  --more: #90be6d;
+  --less: #f94144;
+  --reset: #f8961e;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ccd7e0;
+}
+
+.container {
+  text-align: center;
+  font-family: var(--fuentePrincipal);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 10rem;
+  margin: 15rem 0 auto;
+  color: hsl(209, 61%, 16%);
+}
+
+#value {
+  font-size: 15rem;
+  margin: 0 auto;
+  color: hsl(209, 61%, 16%);
+}
+
+.container__grid {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.btn {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btnIncrease {
+  border: 5px solid var(--more);
+  transition: 0.3s;
+}
+
+.btnIncrease:hover {
+  background-color: var(--more);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnReset {
+  border: 5px solid var(--reset);
+  transition: 0.3s;
+}
+
+.btnReset:hover {
+  background-color: var(--reset);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnDecrease {
+  border: 5px solid var(--less);
+  transition: 0.3s;
+}
+
+.btnDecrease:hover {
+  background-color: var(--less);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
